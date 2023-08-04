@@ -28,7 +28,8 @@ const LoadingBarComponent = () => {
 
   return (
     <>
-      {isPageReloading && <LoadingBar ref={loadingBarRef} />}
+      {isPageReloading && <LoadingBar ref={loadingBarRef} color="#3498db" />}{" "}
+      {/* Set the color to blue (#3498db) */}
       <Outlet />
     </>
   );

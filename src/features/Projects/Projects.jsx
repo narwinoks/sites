@@ -13,7 +13,7 @@ const Projects = () => {
             alt="Sunset in the mountains"
           ></img>
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 hover:cursor-pointer hover:underline hover:font-bold hover:text-blue-800">The Coldest Sunset</div>
+            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-base">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document or

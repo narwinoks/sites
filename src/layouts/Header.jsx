@@ -19,22 +19,40 @@ const Header = ({ toggleDarkMode }) => {
           <FiAlignLeft></FiAlignLeft>
         </button>
         <div className="hidden space-x-2 md:flex">
-          <Link className="rounded-md py-2 px-4 font-medium hover:bg-gray-200">
+          <Link
+            to={"/"}
+            className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
             Home
           </Link>
-          <Link className="rounded-md py-2 px-4 font-medium hover:bg-gray-200">
+          <Link
+            to={"/about"}
+            className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
             About
           </Link>
-          <Link className="rounded-md py-2 px-4 font-medium hover:bg-gray-200">
+          <Link
+            to={"/projects"}
+            className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
             Projects
           </Link>
-          <Link className="rounded-md py-2 px-4 font-medium hover:bg-gray-200">
+          <Link
+            to={"/blogs"}
+            className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
             Blogs
           </Link>
-          <Link className="rounded-md py-2 px-4 font-medium hover:bg-gray-200">
+          <Link
+            to={"/blogs"}
+            className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
             Contact
           </Link>
-          <Link className="rounded-md py-2 px-4 font-medium hover:bg-gray-200">
+          <Link
+            to={"/others"}
+            className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
             Others
           </Link>
         </div>

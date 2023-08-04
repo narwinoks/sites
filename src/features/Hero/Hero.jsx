@@ -3,10 +3,10 @@ import LOGO from "../../assets/hero-logo.png";
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse items-start justify-between px-4 xs:px-0 sm:flex-row sm:items-center">
-      <div class="flex max-w-md flex-col">
-        <h1 class="font-bold my-3 text-3xl">Winarno</h1>
-        <p class="mt-1 text-lg font-semibold">Software Developer</p>
-        <p class="mt-3">
+      <div className="flex max-w-md flex-col">
+        <h1 className="font-bold my-3 text-3xl">Winarno</h1>
+        <p className="mt-1 text-lg font-semibold">Software Developer</p>
+        <p className="mt-3">
           Software developer specialized in web development using PHP and
           Javascript.
         </p>

@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Main from "../layouts/Main";
+import About from "../features/About/About";
+import Skillset from "../features/Skillset/Skillset";
+import Experience from "../features/Experience/Experience";
 
 const AboutPage = () => {
   return (
-    <div>
-      <h3>About Page</h3>
-      <Link to={"/"}>
-        <h1>Home Page</h1>
-      </Link>
-      <Link to={"/about"}>
-        <h1>About</h1>
-      </Link>
-    </div>
+    <Main>
+      <About></About>
+      <hr></hr>
+      <Skillset></Skillset>
+      <hr></hr>
+      <Experience></Experience>
+    </Main>
   );
 };
 
