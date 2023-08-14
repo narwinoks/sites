@@ -1,6 +1,7 @@
 import React from "react";
 import Hr from "../../components/hr";
 import CardContainer from "../../components/CardContainer";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -23,9 +24,11 @@ const Blog = () => {
           </div>
           <div className="px-6 py-4 h-1/2 flex flex-col justify-between">
             <p className="mb-2">27 June 2023</p>
-            <div className="mb-2 text-2xl font-bold hover:cursor-pointer hover:underline hover:decoration-blue-600 hover:text-blue-600">
-              Belajar Laravel Dasar
-            </div>
+            <Link to={"/blog/123"}>
+              <div className="mb-2 text-2xl font-bold hover:cursor-pointer hover:underline hover:decoration-blue-600 hover:text-blue-600">
+                Belajar Laravel Dasar
+              </div>
+            </Link>
             <p className="text-base">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus quia, nulla! Maiores et perferendis eaque,

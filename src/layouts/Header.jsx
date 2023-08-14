@@ -44,7 +44,7 @@ const Header = ({ toggleDarkMode }) => {
             Blogs
           </Link>
           <Link
-            to={"/blogs"}
+            to={"/contacts"}
             className="rounded-md py-2 px-4 font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
           >
             Contact
