@@ -38,7 +38,8 @@ const Music = () => {
                 className="w-16 h-16 rounded object-cover"
               />
               <Link
-                href={top.artist}
+                to={top.songUrl}
+                target="_blank"
                 className="font-medium hover:text-brand-blue hover:underline dark:hover:text-brand-sky w-full"
                 rel="noopener noreferrer"
               >
