@@ -1,10 +1,15 @@
 import React from "react";
 import Main from "../layouts/Main";
+import ContactLink from "../features/contact/ContactLink";
+import ContactUs from "../features/contact/ContactUs";
+import Hr from "../components/hr";
 
 const ContactPage = () => {
   return (
     <Main>
-      <p>ContactPage</p>
+      <ContactLink></ContactLink>
+      <Hr />
+      <ContactUs></ContactUs>
     </Main>
   );
 };

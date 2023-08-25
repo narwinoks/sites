@@ -3,6 +3,7 @@ import Main from "../layouts/Main";
 import About from "../features/About/About";
 import Skillset from "../features/Skillset/Skillset";
 import Experience from "../features/Experience/Experience";
+import Hr from "../components/hr";
 
 const AboutPage = () => {
   return (
@@ -10,7 +11,7 @@ const AboutPage = () => {
       <About></About>
       <hr></hr>
       <Skillset></Skillset>
-      <hr></hr>
+      <Hr></Hr>
       <Experience></Experience>
     </Main>
   );

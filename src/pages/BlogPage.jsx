@@ -10,8 +10,8 @@ const BlogPage = () => {
     <Main>
       <CardContainer>
         <article>
-        <figure></figure>
-        <figure></figure>
+          <figure></figure>
+          <figure></figure>
         </article>
       </CardContainer>
     </Main>

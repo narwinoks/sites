@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import CardContainer from "../../components/CardContainer";
+import data from "../../_data/data.json";
 
 const Skillset = () => {
+  const skills = useMemo(() => data.skills, []);
   return (
     <section>
       <div className="py-5">
@@ -11,10 +13,10 @@ const Skillset = () => {
             <div className="p-4">
               <ul className="list-none pl-4 space-y-2 text-base">
                 <li className="font-semibold pb-3">Languages</li>
-                <li>PHP</li>
-                <li>Javascripts</li>
-                <li>Typescripts</li>
-                <li>Java</li>
+                {skills &&
+                  skills[0].language.map((language, index) => (
+                    <li key={index}>{language}</li>
+                  ))}
               </ul>
             </div>
           </CardContainer>
@@ -22,12 +24,11 @@ const Skillset = () => {
             <div className="p-4">
               <ul className="list-none pl-4 space-y-2 text-base">
                 <li className="font-semibold pb-3">Backend</li>
-                <li>Laravel</li>
-                <li>Express js</li>
-                <li>Node js</li>
-                <li>Mysql</li>
-                <li>Postgresql</li>
-                <li>Mongo db</li>
+
+                {skills &&
+                  skills[0].backend.map((backend, index) => (
+                    <li key={index}>{backend}</li>
+                  ))}
               </ul>
             </div>
           </CardContainer>
@@ -35,9 +36,10 @@ const Skillset = () => {
             <div className="p-4">
               <ul className="list-none pl-4 space-y-2 text-base">
                 <li className="font-semibold pb-3">Frontend</li>
-                <li>React</li>
-                <li>Bootstrap</li>
-                <li>Tailwindcss</li>
+                {skills &&
+                  skills[0].frontend.map((frontend, index) => (
+                    <li key={index}>{frontend}</li>
+                  ))}
               </ul>
             </div>
           </CardContainer>

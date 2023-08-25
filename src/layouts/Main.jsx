@@ -39,7 +39,7 @@ const Main = ({
 };
 
 Main.defaultProps = {
-  title: "WINARNO",
+  title: "winarno",
   description: "WINARNO",
   keywords: "WINARNO",
   author: "win",

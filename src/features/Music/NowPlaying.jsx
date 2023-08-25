@@ -24,7 +24,7 @@ const NowPlaying = () => {
   }, []);
   return (
     <>
-      <h2 class="font-bold my-3 text-2xl">Music</h2>
+      <h2 className="font-bold my-3 text-2xl">Music</h2>
       <div
         className={clsx(
           "mb-4 flex items-center space-x-1 rounded bg-gray-200 p-3",
