@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
+import data from "../../_data/data.json";
+import { Link } from "react-router-dom";
 
 const ContactLink = () => {
+  const contact = useMemo(() => data.contact, []);
   return (
     <section>
       <div className="py-5">
@@ -9,56 +12,52 @@ const ContactLink = () => {
           You can reach me out via email at:
           <a
             className="font-medium hover:text-brand-blue hover:underline dark:hover:text-brand-sky underline"
-            href="mailto:hi@hendraaagil.dev"
+            href={`mailto:${contact.email}`}
           >
-            hi@hendraaagil.dev{" "}
+            {contact.email}{" "}
           </a>
           or via socials below:
         </p>
         <ul className="list-disc pl-6 mt-2 space-y-2">
           <li>
             <strong className="mr-1">GitHub</strong>-
-            <a
-              href="https://github.com/hendraaagil"
+            <Link
+              to={contact.github}
               className="font-medium hover:text-brand-blue hover:underline dark:hover:text-brand-sky ml-1 underline"
               target="_blank"
-              rel="noopener noreferrer"
             >
-              https://github.com/hendraaagil
-            </a>
+              {contact.github}
+            </Link>
           </li>
           <li>
             <strong className="mr-1">LinkedIn</strong>-
-            <a
-              href="https://linkedin.com/in/hendraaagil"
+            <Link
+              to={contact.linkedin}
               className="font-medium hover:text-brand-blue hover:underline dark:hover:text-brand-sky ml-1 underline"
               target="_blank"
-              rel="noopener noreferrer"
             >
-              https://linkedin.com/in/hendraaagil
-            </a>
+              {contact.linkedin}
+            </Link>
           </li>
           <li>
             <strong className="mr-1">Telegram</strong>-
-            <a
-              href="https://t.me/hendraaagil"
+            <Link
+              to={contact.telegram}
               className="font-medium hover:text-brand-blue hover:underline dark:hover:text-brand-sky ml-1 underline"
               target="_blank"
-              rel="noopener noreferrer"
             >
-              https://t.me/hendraaagil
-            </a>
+              {contact.telegram}
+            </Link>
           </li>
           <li>
-            <strong className="mr-1">Twitter</strong>-
-            <a
-              href="https://twitter.com/hendraaagil"
+            <strong className="mr-1">Instagram</strong>-
+            <Link
+              to={contact.instagram}
               className="font-medium hover:text-brand-blue hover:underline dark:hover:text-brand-sky ml-1 underline"
               target="_blank"
-              rel="noopener noreferrer"
             >
-              https://twitter.com/hendraaagil
-            </a>
+              {contact.instagram}
+            </Link>
           </li>
         </ul>
       </div>
